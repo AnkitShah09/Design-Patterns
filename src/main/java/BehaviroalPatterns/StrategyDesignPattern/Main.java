@@ -2,6 +2,11 @@ package BehaviroalPatterns.StrategyDesignPattern;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This will be implemented soon!!!");
+
+        Vehicle vehicle1 = new GoodsVehicle();
+        vehicle1.drive();
+
+        Vehicle vehicle2 = new SportsVehicle();
+        vehicle2.drive();
     }
 }
