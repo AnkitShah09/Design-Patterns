@@ -1,4 +1,4 @@
-package BehaviroalPatterns.ChainOfResponsibilityPattern;
+package BehaviroalPatterns.ChainOfResponsibilityDesignPattern;
 
 public enum Priority {
 

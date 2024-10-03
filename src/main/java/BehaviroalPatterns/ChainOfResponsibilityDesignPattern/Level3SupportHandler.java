@@ -1,4 +1,4 @@
-package BehaviroalPatterns.ChainOfResponsibilityPattern;
+package BehaviroalPatterns.ChainOfResponsibilityDesignPattern;
 
 public class Level3SupportHandler implements SupportHandler {
 

@@ -1,6 +1,6 @@
-package BehaviroalPatterns.ChainOfResponsibilityPattern;
+package BehaviroalPatterns.ChainOfResponsibilityDesignPattern;
 
-public class Level1SupportHandler implements SupportHandler {
+public class Level2SupportHandler implements SupportHandler {
 
     SupportHandler nextHandler;
 
@@ -11,8 +11,8 @@ public class Level1SupportHandler implements SupportHandler {
 
     @Override
     public void handle(SupportRequest supportRequest) {
-        if(Priority.LOW == supportRequest.getPriority()) {
-            System.out.println("This request is handled by Level1 Support Handler.");
+        if(Priority.MEDIUM == supportRequest.getPriority()) {
+            System.out.println("This request is handled by Level2 Support Handler.");
         } else if(this.nextHandler != null) {
             nextHandler.handle(supportRequest);
         }
